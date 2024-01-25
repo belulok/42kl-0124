@@ -16,15 +16,20 @@ void	ft_putchar(char c)
 	write(1, &c, 1);
 }
 
-void	ft_print_numbers(int n1)
+void	ft_putchar(char c)
 {
-	int	n;
+	write(1, &c, 1);
+}
 
-	n = 48;
-	while (n <= 57)
+void	ft_print_combination(int i, int j, int k)
+{
+	ft_putchar(i + 48);
+	ft_putchar(j + 48);
+	ft_putchar(k + 48);
+	if (i != 7)
 	{
-		ft_putchar(n1);
-		n++;
+		ft_putchar(',');
+		ft_putchar(' ');
 	}
 }
 
@@ -43,25 +48,18 @@ void	ft_print_comb(void)
 			k = j + 1;
 			while (k <= 9)
 			{
-				ft_putchar(i + 48);
-				ft_putchar(j + 48);
-				ft_putchar(k + 48);
-				if (i != 7)
-				{
-					ft_putchar(44);
-					ft_putchar(' ');
-				}
-				k++ ;
+				ft_print_combination(i, j, k);
+				k++;
 			}
-			j++ ;
+			j++;
 		}
-		i++ ;
+		i++;
 	}
 }
 /*
-int	main()
+int	main(void)
 {
 	ft_print_comb();
-	return 0;
+	return (0);
 }
 */

@@ -3,16 +3,21 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putchar.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jcesar-g <jcesar-g@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: sesaging <sesaging@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/04/03 01:05:01 by dalves-s          #+#    #+#             */
-/*   Updated: 2021/04/03 18:16:49 by jcesar-g         ###   ########.fr       */
+/*   Created: 2024/01/14 18:42:38 by sesaging          #+#    #+#             */
+/*   Updated: 2024/01/14 18:47:25 by sesaging         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 #include <unistd.h>
 
 void	ft_putchar(char c)
 {
 	write(1, &c, 1);
 }
+/*
+int main()
+{
+	ft_putchar('S');
+	ft_putchar('\n');
+} */

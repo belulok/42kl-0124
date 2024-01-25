@@ -3,17 +3,32 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lufelipe <lufelipe@student.42sp.org.br>    +#+  +:+       +#+        */
+/*   By: xlaw <xlaw@student.42kl.edu.my>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/04/03 01:05:08 by dalves-s          #+#    #+#             */
-/*   Updated: 2021/04/04 22:40:53 by lufelipe         ###   ########.fr       */
+/*   Created: 2024/01/14 17:38:25 by xlaw              #+#    #+#             */
+/*   Updated: 2024/01/14 17:38:27 by xlaw             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <stdlib.h>
+
 void	rush(int x, int y);
 
-int		main(void)
+int	main(int argc, char *argv[])
 {
-	rush(10, 3);
+	int	width;
+	int	height;
+
+	if (argc == 3)
+	{
+		width = atoi(argv[1]);
+		height = atoi(argv[2]);
+	}
+	else
+	{
+		width = 12;
+		height = 16;
+	}
+	rush(width, height);
 	return (0);
 }

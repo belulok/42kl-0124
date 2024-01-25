@@ -1,0 +1,6 @@
+[submodule "c/c/c00"]
+	path = c/c/c00
+	url = git@vogsphere.42kl.edu.my:vogsphere/intra-uuid-2d3a1e7c-c102-4371-a9e3-d76d3cc7b7fe-5411744-sesaging
+[submodule "c/c00"]
+	path = c/c00
+	url = git@vogsphere.42kl.edu.my:vogsphere/intra-uuid-2d3a1e7c-c102-4371-a9e3-d76d3cc7b7fe-5411744-sesaging

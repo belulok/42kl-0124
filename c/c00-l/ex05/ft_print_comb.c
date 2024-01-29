@@ -6,15 +6,10 @@
 /*   By: sesaging <sesaging@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/15 15:01:14 by sesaging          #+#    #+#             */
-/*   Updated: 2024/01/15 15:05:23 by sesaging         ###   ########.fr       */
+/*   Updated: 2024/01/25 11:28:57 by sesaging         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 #include <unistd.h>
-
-void	ft_putchar(char c)
-{
-	write(1, &c, 1);
-}
 
 void	ft_putchar(char c)
 {

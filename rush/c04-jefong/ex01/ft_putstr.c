@@ -1,27 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcapitalize.c                                 :+:      :+:    :+:   */
+/*   ft_putstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sesaging <sesaging@student.42kl.edu.my>    +#+  +:+       +#+        */
+/*   By: jefong <jefong@student.42kl.edu.my>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/01/29 17:16:00 by sesaging          #+#    #+#             */
-/*   Updated: 2024/01/29 17:16:02 by sesaging         ###   ########.fr       */
+/*   Created: 2024/01/24 15:39:16 by jefong            #+#    #+#             */
+/*   Updated: 2024/01/29 15:59:55 by jefong           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strcapitalize(char *str)
+#include <unistd.h>
+
+void	ft_putstr(char *str)
 {
 	int	i;
 
-	i = 1;
-	if ((str[0] >= 'a') && (str[0] <= 'z'))
-		str[0] -= 32;
-	while (str[i])
+	i = -1;
+	while (str[++i] != 0)
 	{
-		if ((str[i - 1] < 47) && ((str[i] >= 'a') && (str[i] <= 'z')))
-			str[i] -= 32;
-		i++;
+		write(1, &str[i], 1);
 	}
-	return (str);
 }
+/* 
+int	main(void)
+{
+	char *str = "Where do you want to go for lunch?";
+
+	ft_putstr(str);
+	return (0);
+} */

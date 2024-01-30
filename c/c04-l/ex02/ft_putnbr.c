@@ -6,7 +6,7 @@
 /*   By: sesaging <sesaging@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/30 21:55:17 by sesaging          #+#    #+#             */
-/*   Updated: 2024/01/30 21:55:19 by sesaging         ###   ########.fr       */
+/*   Updated: 2024/01/30 22:08:12 by sesaging         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ void	ft_putnbr(int nb)
 	{
 		ft_putchar('-');
 		ft_putchar('2');
-		nb = 147483648; // Remainder of the number after taking out '-2'
+		nb = 147483648;
 	}
 	else if (nb < 0)
 	{

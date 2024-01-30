@@ -6,7 +6,7 @@
 /*   By: myeow <myeow@student.42kl.edu.my>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/18 20:39:26 by myeow             #+#    #+#             */
-/*   Updated: 2024/01/20 22:11:34 by sesaging         ###   ########.fr       */
+/*   Updated: 2024/01/29 23:43:04 by sesaging         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,9 +39,9 @@ int	ft_strncmp(char *s1, char *s2, unsigned int n)
 #include <string.h>
 int	main()
 {
-	char str1[] = "";
-	char str2[] = "sfsd";
-	int	n = -1;
+	char str1[] = "Hello.";
+	char str2[] = "Hello world.";
+	int	n = 6;
 	//n cant be less than 0 right? since it is an unsigned int
 	int	result = ft_strncmp(str1, str2, n);
 	int real_result = strncmp(str1, str2, n);

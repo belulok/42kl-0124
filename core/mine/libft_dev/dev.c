@@ -7,6 +7,7 @@
 #include <stdio.h>
 #include <ctype.h>
 #include <string.h>
+#include <strings.h>
 
 /******************************************
 *
@@ -20,7 +21,63 @@
 // int ft_isascii(int arg);
 // int ft_isprint(int  arg);
 // size_t  ft_strlen(char  *str);
+// void*	ft_memset(void*	pointers, int	desiredValue, size_t	numberOfBytesToSet);
 
+/******************************************
+*
+*  Name: ft_memcpy
+*  Purpose: 
+*  Reference: memcpy
+*
+*******************************************
+*/
+
+/******************************************
+*
+*  Name: ft_bzero
+*  Purpose: 
+*  Reference: bzero
+*
+*******************************************
+
+int main() {
+    char buffer[256];
+
+    // Zero out the memory of buffer
+    bzero(buffer, sizeof(buffer));
+
+    return 0;
+}
+*/
+/******************************************
+*
+*  Name: ft_memset
+*  Purpose: 
+*  Reference: memset
+*
+*******************************************
+
+int main() {
+    char buffer[10];
+
+    memset(buffer, 0, sizeof(buffer));
+
+    printf("Libc: ");
+    for (size_t i = 0; i < sizeof(buffer); i++) {
+        printf("%d ", buffer[i]);
+    }
+    printf("\n");
+    ft_memset(buffer, 0, sizeof(buffer));
+
+    printf("Own : ");
+    for (size_t i = 0; i < sizeof(buffer); i++) {
+        printf("%d ", buffer[i]);
+    }
+
+    printf("\n");
+    return 0;
+}
+*/
 /******************************************
 *
 *  Name: ft_strlen

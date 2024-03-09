@@ -1,15 +1,27 @@
-int ft_isalpha(char character)
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: sesaging <sesaging@student.42kl.edu.my>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/03/09 19:56:23 by sesaging          #+#    #+#             */
+/*   Updated: 2024/03/09 19:57:03 by sesaging         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+int	ft_isalpha(char c)
 {
-    if(character >= 'A' && character <= 'Z')
-    {
-        return 1;
-    }
-    else if(character >= 'a' && character <= 'z')
-    {
-        return 1;
-    }
-    else
-    {
-        return 0;
-    }
+	if (c >= 'A' && c <= 'Z')
+	{
+		return (1);
+	}
+	else if (c >= 'a' && c <= 'z')
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}
 }

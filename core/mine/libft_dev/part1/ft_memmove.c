@@ -1,21 +1,40 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: sesaging <sesaging@student.42kl.edu.my>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/03/09 21:47:29 by sesaging          #+#    #+#             */
+/*   Updated: 2024/03/09 21:50:03 by sesaging         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
-void* ft_memmove(void* dataTo, const void* dataFrom, size_t numberOfBytesToSet)
+void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-    unsigned char* byteLevelDataTo = dataTo;
-    const unsigned char* byteLevelDataFrom = dataFrom;
+	unsigned char		*byteleveldst;
+	const unsigned char	*bytelevelsrc;
+	size_t				i;
 
-    if (byteLevelDataTo < byteLevelDataFrom) {
-        size_t i = 0;
-        while (i < numberOfBytesToSet) {
-            byteLevelDataTo[i] = byteLevelDataFrom[i];
-            i++;
-        }
-    } else {
-        while (numberOfBytesToSet--) {
-            byteLevelDataTo[numberOfBytesToSet] = byteLevelDataFrom[numberOfBytesToSet];
-        }
-    }
-
-    return dataTo;
+	*byteleveldst = dst;
+	*bytelevelsrc = src;
+	if (byteLeveldst < byteLevelsrc)
+	{
+		i = 0;
+		while (i < len)
+		{
+			byteleveldst[i] = bytelevelsrc[i];
+			i++;
+		}
+	}
+	else
+	{
+		while (len--)
+		{
+			byteleveldst[len] = bytelevelsrc[len];
+		}
+	}
+	return (dst);
 }

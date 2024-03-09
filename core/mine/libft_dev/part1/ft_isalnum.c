@@ -1,16 +1,28 @@
-int ft_isalnum(char character)
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_isalnum.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: sesaging <sesaging@student.42kl.edu.my>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/03/09 20:37:22 by sesaging          #+#    #+#             */
+/*   Updated: 2024/03/09 20:37:25 by sesaging         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+int	ft_isalnum(char c)
 {
-    if((character >= 'A' && character <= 'Z')
-        || (character >= 'a' && character <= 'z'))
-    {
-       return 1; 
-    }
-    else if(character >= '0' && character <= '9')
-    {
-        return 1;
-    }
-    else
-    {
-        return 0;
-    }  
+	if((c >= 'A' && c <= 'Z')
+        || (c >= 'a' && c <= 'z'))
+	{
+		return (1);
+	}
+    else if (c >= '0' && c <= '9')
+	{
+		return (1);
+	}
+	else
+	{
+		return (0);
+	}  
 }

@@ -1,13 +1,25 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: sesaging <sesaging@student.42kl.edu.my>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/03/09 20:34:06 by sesaging          #+#    #+#             */
+/*   Updated: 2024/03/09 20:35:05 by sesaging         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
-void*	ft_memset(void*	pointers, int	desiredValue, size_t	numberOfBytesToSet)
+void	*ft_memset(void *b, int c, size_t len)
 {
-	unsigned char*	byteLevelPointers;
+	unsigned char	*bytelevelb;
 
-	byteLevelPointers = pointers;
-	while(numberOfBytesToSet--)
+	bytelevelb = b;
+	while (len--)
 	{
-		*byteLevelPointers++ = (unsigned char)desiredValue;
+		*bytelevelb++ = (unsigned char) c;
 	}
-	return pointers;
+	return (b);
 }

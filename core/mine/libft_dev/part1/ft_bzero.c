@@ -1,6 +1,6 @@
 #include "libft.h"
 
-void	ft_zbero(void*	pointers, size_t	numberOfBytesToSetToZero)
+void	ft_bzero(void*	pointers, size_t	numberOfBytesToSetToZero)
 {
 	unsigned char* byteLevelPointers;
 

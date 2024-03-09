@@ -1,12 +1,24 @@
-char* ft_strchr(const char* string, int firstOccurenceOfCharacter)
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: sesaging <sesaging@student.42kl.edu.my>    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/03/09 20:11:13 by sesaging          #+#    #+#             */
+/*   Updated: 2024/03/09 20:12:23 by sesaging         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+char	*ft_strchr(const char *s, int c)
 {
-    while (*string != '\0')
+	while (*s != '\0')
 	{
-        if (*string == firstOccurenceOfCharacter)
+		if (*s == c)
 		{
-            return (char*)string;
-        }
-        string++;
-    }
-    return NULL;
+			return ((char *)s);
+		}
+		s++;
+	}
+	return (NULL);
 }

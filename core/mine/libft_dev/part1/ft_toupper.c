@@ -1,6 +1,6 @@
-char ft_toupper(char character) {
-    if (character >= 'a' && character <= 'z') {
-        return character - 'a' + 'A';
+char ft_toupper(char c) {
+    if (c >= 'a' && c <= 'z') {
+        return c - 'a' + 'A';
     }
-    return character;
+    return c;
 }

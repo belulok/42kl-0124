@@ -1,10 +1,12 @@
-char* ft_strrchr(const char* string, int firstOccurenceOfCharacter)
+char *ft_strrchr(const char *string, int firstOccurenceOfCharacter)
 {
-    const char* lastOccurrence = NULL;
-        if (*string == firstOccurenceOfCharacter) {
-            lastOccurrence = string;
-        }
-        string++;
+    const char *lastOccurrence;
+
+    lastOccurrence = NULL;
+    if (*string == firstOccurenceOfCharacter)
+    {
+        lastOccurrence = string;
     }
-    return (char*)lastOccurrence;
+    string++;
+return ((char *)lastOccurrence);
 }

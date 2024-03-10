@@ -1,6 +1,8 @@
-char ft_tolower(char character) {
-    if (character >= 'A' && character <= 'Z') {
-        return character - 'A' + 'a';
+char ft_tolower(char c)
+{
+    if (c >= 'A' && c <= 'Z')
+    {
+        return (c - 'A' + 'a');
     }
-    return character;
+    return c;
 }

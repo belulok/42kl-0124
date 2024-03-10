@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sesaging <sesaging@student.42kl.edu.my>    +#+  +:+       +#+        */
+/*   By: sesaging <sesaging@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/09 21:47:29 by sesaging          #+#    #+#             */
-/*   Updated: 2024/03/09 21:50:03 by sesaging         ###   ########.fr       */
+/*   Updated: 2024/03/10 20:43:50 by sesaging         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,9 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	const unsigned char	*bytelevelsrc;
 	size_t				i;
 
-	*byteleveldst = dst;
-	*bytelevelsrc = src;
-	if (byteLeveldst < byteLevelsrc)
+	byteleveldst = dst;
+	bytelevelsrc = src;
+	if (byteleveldst < bytelevelsrc)
 	{
 		i = 0;
 		while (i < len)

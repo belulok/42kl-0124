@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sesaging <sesaging@student.42kl.edu.my>    +#+  +:+       +#+        */
+/*   By: sesaging <sesaging@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/10 18:59:06 by sesaging          #+#    #+#             */
-/*   Updated: 2024/03/10 19:01:25 by sesaging         ###   ########.fr       */
+/*   Updated: 2024/03/10 20:44:28 by sesaging         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ void	*ft_calloc(size_t count, size_t size)
 	void	*ptr;
 
 	totalsize = count * size;
-	*ptr = malloc(totalsize);
+	ptr = malloc(totalsize);
 	if (ptr)
 	{
 		memset(ptr, 0, totalsize);

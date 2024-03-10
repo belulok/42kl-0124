@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sesaging <sesaging@student.42kl.edu.my>    +#+  +:+       +#+        */
+/*   By: sesaging <sesaging@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/10 18:48:49 by sesaging          #+#    #+#             */
-/*   Updated: 2024/03/10 18:49:51 by sesaging         ###   ########.fr       */
+/*   Updated: 2024/03/10 20:45:30 by sesaging         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ char	*ft_strrchr(const char *s, int c)
 	lastoccurrence = NULL;
 	if (*s == c)
 	{
-		lastccurrence = s;
+		lastoccurrence = s;
 	}
 	s++;
 	return ((char *)lastoccurrence);

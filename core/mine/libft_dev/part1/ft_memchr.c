@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: sesaging <sesaging@student.42kl.edu.my>    +#+  +:+       +#+        */
+/*   By: sesaging <sesaging@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/09 21:39:20 by sesaging          #+#    #+#             */
-/*   Updated: 2024/03/09 21:40:24 by sesaging         ###   ########.fr       */
+/*   Updated: 2024/03/10 20:44:43 by sesaging         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	*ft_memchr(const void *s, int c, size_t n)
 {
 	const unsigned char	*p;
 
-	*p = s;
+	p = s;
 	while (n-- > 0)
 	{
 		if (*p == (unsigned char)c)

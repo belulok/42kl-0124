@@ -12,9 +12,10 @@ ft_memchr
 ft_memcmp
 ft_memmove
 ft_strdup
-ft_strlcat
-ft_strlen
-ft_strncmp
+
+ft_strlcat*
+ft_strlen*
+ft_strncmp*
 ft_strnstr
 ft_strrchr
 ft_tolower

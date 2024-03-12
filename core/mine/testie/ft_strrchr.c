@@ -1,36 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_substr.c                                        :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: sesaging <sesaging@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/03/10 19:09:45 by sesaging          #+#    #+#             */
-/*   Updated: 2024/03/11 12:44:42 by sesaging         ###   ########.fr       */
+/*   Created: 2024/03/10 18:48:49 by sesaging          #+#    #+#             */
+/*   Updated: 2024/03/11 15:14:01 by sesaging         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-char	*ft_substr(const char *s, unsigned int start, size_t len)
+char	*ft_strrchr(const char *s, int c)
 {
-	size_t	s_len;
-	char	*substr;
-	size_t	i;
+	const char	*lastoccurrence;
 
-	if (!s)
-		return (NULL);
-	s_len = ft_strlen(s);
-	if (start >= s_len)
-		return (ft_strdup(""));
-	substr = malloc(len + 1);
-	if (!substr)
-		return (NULL);
-	while (i < len && s[start + i] != '\0')
+	lastoccurrence = NULL;
+	if (*s == c)
 	{
-		substr[i] = s[start + i];
-		++i
+		lastoccurrence = s;
 	}
-	substr[i] = '\0';
-	return (substr);
+	s++;
+	return ((char *)lastoccurrence);
 }
